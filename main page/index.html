@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BITS '22</title>
+    <link rel="icon" type="image/x-icon" href="/img/bits-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script type='text/javascript'>
+       window.smartlook||(function(d) {
+         var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+         var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+      smartlook('init', '5444d749ce5fad3604ce36be2187e6afb6d296c7', { region: 'eu' });
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+    
+        <div class="nav-burger-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    
+        <div class="nav-links">
+          <a href="/">
+            <div class="nav-link <%= active == 'home' ? 'nav-active' : '' %>" ><span>Home</span></div>
+          </a> <a href="/tasks">
+            <div class="nav-link <%= active == 'task' ? 'nav-active' : '' %>" ><span>Tasks</span></div>
+          </a> <a href="/quiz">
+            <div class="nav-link <%= active == 'test' ? 'nav-active' : '' %>" ><span>Quiz</span></div>
+          </a> <a href="/leaderboard">
+            <div class="nav-link <%= active == 'lead' ? 'nav-active' : '' %>" ><span>Leaderboard</span></div>
+          </a> <a href="/help">
+            <div class="nav-link <%= active == 'help' ? 'nav-active' : '' %>" ><span>Help</span></div>
+          </a>
+          <a href="/login">
+            <div class="nav-link" ><span>Login</span></div>
+          </a>
+        </div>
+        <div class="nav-profile">
+          <div class="nav-profile-icon">
+            <p>S</p>
+          </div>
+          <div class="nav-profile-popup nav-popup-hidden">
+            <div class="nav-profile-btn"><a href="/profile">Profile</a></div>
+            <div class="nav-profile-btn"><a href="/logout">Sign Out</a></div>
+          </div>
+        </div>
+        </nav>
+      <script>
+        document.querySelector(".nav-profile-icon").addEventListener("click", (e) => {
+          document.querySelector(".nav-profile-popup").classList.toggle("nav-popup-hidden")
+        })
+        document.querySelector(".nav-burger-toggle").addEventListener("click", (e) => {
+          document.querySelector(".nav-links").classList.toggle("nav-links-toggled")
+        })
+      </script>
+    <main class="main">
+      <section class="landing">
+        <div class="hero">
+          <div class="hero-title">
+            <p>BITS <span>'22</span></p>
+          </div>
+          <div class="hero-desc">
+            <p>The First-Ever Task-Based Intraschool ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</p>
+          </div>
+          <div class="hero-quote">
+            <p><span>"</span> Success is not final, failure is not fatal: it is the courage to continue that counts. <span>"</span></p>
+          </div>
+          <div class="hero-cta">
+            <a id="time"></a>
+          </div>
+        </div>
+        
+        <div class="mascot">
+          <img src="mascot.png">
+        </div>
+      </section>
+
+      <div class="notification-container" id="notification-container"></div>
+      
+      <section class="info">
+        <div class="info-title">What is <span>BITS ?</span></div>
+        <div class="info-desc">
+          <p>BITS is an annual intra-school task-based ICT competition, organized by the Ananda College ICT Society, that will be held online for young Anandians from Grades 6-11</p>
+          <p>This year marks the 5th consecutive time BITS was organized to test the skills and knowledge of young Aanadians while giving them a unique platform to showcase their talents and provide a valuable opportunity to use their abilities for something intuitive and productive.</p>
+          <p>BITS is a task-based ICT competition modelled after international standard competitions like Google Code-In, Summer of Code, etc...</p>
+          <p>The participants will be provided a variety of tasks based on various fields of ICT and they are mainly categorized into 3 separate categories.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <img src="https://acicts.github.io/acicts18.github.io/assets/img/AC_ACICTS_1.png" width="99px" height="60px">
+              </div>
+            <div class="footer-desc">
+              <p>BITS is the First-Ever Task-Based Intraschool ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</p>
+            </div>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/acicts.lk" target="_blank">
+                <div class="footer-social-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </a>
+              <a href="https://www.youtube.com/user/ACICTS" target="_blank">
+                <div class="footer-social-icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+              </a>
+              <a href="https://www.facebook.com/acicts" target="_blank">
+                <div class="footer-social-icon">
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+              </a>
+              <a href="https://github.com/acicts" target="_blank">
+                <div class="footer-social-icon">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </a>
+              <a href="https://acicts.lk" target="_blank">
+                <div class="footer-social-icon">
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+      
+          <div class="footer-links footer-nav">
+            <h4>Looking for something?</h4>
+            <a href="/">
+              <div class="footer-link <%= active == 'home' ? 'footer-active' : '' %>"><span>Home</span></div>
+            </a> <a href="/tasks">
+              <div class="footer-link <%= active == 'task' ? 'footer-active' : '' %>"><span>Tasks</span></div>
+            </a> <a href="/quiz">
+              <div class="footer-link <%= active == 'test' ? 'footer-active' : '' %>"><span>Quiz</span></div>
+            </a> <a href="/leaderboard">
+              <div class="footer-link <%= active == 'lead' ? 'footer-active' : '' %>"><span>Leaderboard</span></div>
+            </a> <a href="/help">
+              <div class="footer-link <%= active == 'help' ? 'footer-active' : '' %>"><span>Help</span></div>
+            </a> <a href="/profile">
+              <div class="footer-link <%= active == 'profile' ? 'footer-active' : '' %>"><span>Profile</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright Reserved. ACICTS© 2022</p>
+        </div>
+      </footer>
+
+             <script>
+  var countDownDate = new Date("Oct 5, 2022 18:00:00").getTime();
+           
+  var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("time").innerHTML = "Starts in " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+   if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "Register Now";
+    document.getElementById("time").setAttribute("href", "/signup");
+   }
+  }, 1000);
+ </script>
+
+ <script>
+   const notificationContainer = document.getElementById('notification-container');
+   const NOTIFICATION_TYPES = {
+     SUCCESS: 'success'
+   }
+   </script>
+  </body>
+</html>

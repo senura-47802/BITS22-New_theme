@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BITS'22 | Leaderboard</title>
+    <link rel="icon" type="image/x-icon" href="/img/bits-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script type='text/javascript'>
+       window.smartlook||(function(d) {
+         var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+         var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+      smartlook('init', '5444d749ce5fad3604ce36be2187e6afb6d296c7', { region: 'eu' });
+    </script>
+  </head>
+  <body>
+    <nav class="nav">  
+      <div class="nav-burger-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+  
+      <div class="nav-links">
+        <a href="/">
+          <div class="nav-link <%= active == 'home' ? 'nav-active' : '' %>" ><span>Home</span></div>
+        </a> <a href="/tasks">
+          <div class="nav-link <%= active == 'task' ? 'nav-active' : '' %>" ><span>Tasks</span></div>
+        </a> <a href="/quiz">
+          <div class="nav-link <%= active == 'test' ? 'nav-active' : '' %>" ><span>Quiz</span></div>
+        </a> <a href="/leaderboard">
+          <div class="nav-link <%= active == 'lead' ? 'nav-active' : '' %>" ><span>Leaderboard</span></div>
+        </a> <a href="/help">
+          <div class="nav-link <%= active == 'help' ? 'nav-active' : '' %>" ><span>Help</span></div>
+        </a>
+        <a href="/login">
+          <div class="nav-link" ><span>Login</span></div>
+        </a>
+      </div>
+      <div class="nav-profile">
+        <div class="nav-profile-icon">
+          <p>S</p>
+        </div>
+        <div class="nav-profile-popup nav-popup-hidden">
+          <div class="nav-profile-btn"><a href="/profile">Profile</a></div>
+          <div class="nav-profile-btn"><a href="/logout">Sign Out</a></div>
+        </div>
+      </div>
+      </nav>
+    <script>
+      document.querySelector(".nav-profile-icon").addEventListener("click", (e) => {
+        document.querySelector(".nav-profile-popup").classList.toggle("nav-popup-hidden")
+      })
+      document.querySelector(".nav-burger-toggle").addEventListener("click", (e) => {
+        document.querySelector(".nav-links").classList.toggle("nav-links-toggled")
+      })
+    </script>
+
+    <main class="main">
+      <section class="leaderboard">
+        <div class="thead">
+          <p class="tfield-rank">#</p>
+          <p class="tfield-name">Name</p>
+          <p class="tfield-grade">Class</p>
+          <p class="tfield-tasks">No. Of Tasks Accepted</p>
+          <p class="tfield-points">Points</p>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <th class="tfield-rank">1</th>
+              <td class="tfield-name">Gaviru Fernando</td>
+              <td class="tfield-grade">Grade 9</td>
+              <td class="tfield-tasks">53</td>
+              <td class="tfield-points">383</td>
+            </tr>
+            <tr>
+              <th class="tfield-rank">2</th>
+              <td class="tfield-name">Senura</td>
+              <td class="tfield-grade">Grade 9</td>
+              <td class="tfield-tasks">53</td>
+              <td class="tfield-points">339</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="https://acicts.github.io/acicts18.github.io/assets/img/AC_ACICTS_1.png" width="99px" height="60px">
+            </div>
+          <div class="footer-desc">
+            <p>BITS is the First-Ever Task-Based Intraschool ICT competition, organized by the Ananda College ICT Society to provide a platform for our school's students to polish and improve their ICT knowledge in many fields of ICT</p>
+          </div>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/acicts.lk" target="_blank">
+              <div class="footer-social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/user/ACICTS" target="_blank">
+              <div class="footer-social-icon">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/acicts" target="_blank">
+              <div class="footer-social-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </a>
+            <a href="https://github.com/acicts" target="_blank">
+              <div class="footer-social-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </a>
+            <a href="https://acicts.lk" target="_blank">
+              <div class="footer-social-icon">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="footer-links footer-nav">
+          <h4>Looking for something?</h4>
+          <a href="/">
+            <div class="footer-link <%= active == 'home' ? 'footer-active' : '' %>"><span>Home</span></div>
+          </a> <a href="/tasks">
+            <div class="footer-link <%= active == 'task' ? 'footer-active' : '' %>"><span>Tasks</span></div>
+          </a> <a href="/quiz">
+            <div class="footer-link <%= active == 'test' ? 'footer-active' : '' %>"><span>Quiz</span></div>
+          </a> <a href="/leaderboard">
+            <div class="footer-link <%= active == 'lead' ? 'footer-active' : '' %>"><span>Leaderboard</span></div>
+          </a> <a href="/help">
+            <div class="footer-link <%= active == 'help' ? 'footer-active' : '' %>"><span>Help</span></div>
+          </a> <a href="/profile">
+            <div class="footer-link <%= active == 'profile' ? 'footer-active' : '' %>"><span>Profile</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright Reserved. ACICTS© 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
